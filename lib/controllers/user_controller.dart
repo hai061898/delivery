@@ -187,21 +187,21 @@ class UserController {
   }
 
 
-  // Future<ResponseDefault> updateNotificationToken() async {
+  Future<ResponseDefault> updateNotificationToken() async {
 
-  //   final token = await secureStorage.readToken();
-  //   final nToken = await pushNotification.getNotificationToken();
+    final token = await secureStorage.readToken();
+    final nToken = await pushNotification.getNotificationToken();
 
-  //   final resp = await http.put(Uri.parse('${URLS.URL_API}/update-notification-token'),
-  //     headers: { 'Accept' : 'application/json', 'xx-token' : token! },
-  //     body: {
-  //       'nToken' : nToken
-  //     }
-  //   );
+    final resp = await http.put(Uri.parse('${URLS.URL_API}/update-notification-token'),
+      headers: { 'Accept' : 'application/json', 'xx-token' : token! },
+      body: {
+        'nToken' : nToken
+      }
+    );
 
-  //   return ResponseDefault.fromJson( jsonDecode( resp.body ) );
+    return ResponseDefault.fromJson( jsonDecode( resp.body ) );
 
-  // }
+  }
 
 
   Future<List<String>> getAdminsNotificationToken() async {
