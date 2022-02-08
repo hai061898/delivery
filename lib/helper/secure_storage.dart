@@ -1,17 +1,15 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+part of 'helper.dart';
 
 class SecureStorageCustom {
-
-
   final secureStorage = FlutterSecureStorage();
-  
-  Future<void> persistenToken( String token ) async {
+
+  Future<void> persistenToken(String token) async {
     await secureStorage.write(key: 'token', value: token);
   }
 
-  Future<void> persistenRolId( String role ) async {
+  Future<void> persistenRolId(String role) async {
     await secureStorage.write(key: 'role', value: role);
   }
 
@@ -27,9 +25,6 @@ class SecureStorageCustom {
     await secureStorage.delete(key: 'token');
     await secureStorage.deleteAll();
   }
-
-
-
 }
 
 final secureStorage = SecureStorageCustom();
