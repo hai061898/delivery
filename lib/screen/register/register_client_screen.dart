@@ -3,6 +3,7 @@
 import 'package:da/alert_dialog/alert_dialog.dart';
 import 'package:da/bloc/user/user_bloc.dart';
 import 'package:da/helper/helper.dart';
+import 'package:da/screen/login/login_screen.dart';
 import 'package:da/screen/register/components/picture_register.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
@@ -72,7 +73,7 @@ class _RegisterClientPageState extends State<RegisterClientPage> {
         } else if ( state is SuccessUserState ){
 
           Navigator.pop(context);
-          modalSuccess(context, 'Client Registered successfully', () => Navigator.pushReplacement(context, routeFrave(page: LoginPage())));
+          modalSuccess(context, 'Client Registered successfully', () => Navigator.pushReplacement(context, routeCustom(page: LoginPage())));
         
         } else if ( state is FailureUserState ){
 
