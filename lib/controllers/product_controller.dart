@@ -32,7 +32,6 @@ class ProductsController {
         ..fields['description'] = description
         ..fields['price'] = price
         ..fields['category'] = category;
-        // ..files.add( await http.MultipartFile.fromPath('image[]', images));
         for (var image in images) {
           request.files.add( await http.MultipartFile.fromPath('image', image.path));
         }
