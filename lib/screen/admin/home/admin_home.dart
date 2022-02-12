@@ -5,6 +5,7 @@ import 'package:da/bloc/auth/auth_bloc.dart';
 import 'package:da/bloc/user/user_bloc.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/screen/intro/check_login.dart';
+import 'package:da/screen/profile/edit_profile_screen.dart';
 import 'package:da/screen/route_page/role_screen.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';

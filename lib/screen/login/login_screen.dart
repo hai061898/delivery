@@ -6,6 +6,7 @@ import 'package:da/bloc/user/user_bloc.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/screen/forgetpassword/forget_password_screen.dart';
 import 'package:da/screen/intro/intro_page.dart';
+import 'package:da/screen/route_page/role_screen.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -131,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 50.0),
                 TextCustom(text: 'Email Address'),
                 SizedBox(height: 5.0),
-                FormFieldFrave(
+                FormFieldCustom(
                   controller: _emailController,
                   hintText: 'email@frave.com',
                   keyboardType: TextInputType.emailAddress,
@@ -140,7 +141,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 20.0),
                 TextCustom(text: 'Password'),
                 SizedBox(height: 5.0),
-                FormFieldFrave(
+                FormFieldCustom(
                   controller: _passwordController,
                   hintText: '********',
                   isPassword: true,
