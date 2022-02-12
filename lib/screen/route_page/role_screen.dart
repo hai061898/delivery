@@ -2,6 +2,7 @@
 
 import 'package:da/bloc/auth/auth_bloc.dart';
 import 'package:da/helper/helper.dart';
+import 'package:da/screen/admin/home/admin_home.dart';
 import 'package:da/screen/route_page/components/btn_r.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
@@ -35,7 +36,7 @@ class SelectRolePage extends StatelessWidget {
               SizedBox(height: 30.0),
               ( authBloc.user!.rolId == 1) 
                 ? BtnRol(
-                svg: 'Assets/svg/restaurante.svg',
+                svg: 'assets/svg/restaurante.svg',
                 text: 'Restaurant',
                 color1: ColorsCustom.primaryColor.withOpacity(.2),
                 color2: Colors.greenAccent.withOpacity(.1),
@@ -43,7 +44,7 @@ class SelectRolePage extends StatelessWidget {
               ) : Container(),
               (authBloc.user!.rolId == 1 || authBloc.user!.rolId == 3 )
                 ? BtnRol(
-                svg: 'Assets/svg/bussiness-man.svg',
+                svg: 'assets/svg/bussiness-man.svg',
                 text: 'Client',
                 color1: Color(0xffFE6488).withOpacity(.2),
                 color2: Colors.amber.withOpacity(.1),
@@ -51,7 +52,7 @@ class SelectRolePage extends StatelessWidget {
               ) : Container() ,
               (authBloc.user!.rolId == 1 || authBloc.user!.rolId == 3 ) 
                 ? BtnRol(
-                svg: 'Assets/svg/delivery-bike.svg',
+                svg: 'assets/svg/delivery-bike.svg',
                 text: 'Delivery',
                 color1: Color(0xff8956FF).withOpacity(.2),
                 color2: Colors.purpleAccent.withOpacity(.1),
