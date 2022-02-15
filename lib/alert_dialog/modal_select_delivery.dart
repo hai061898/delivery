@@ -124,7 +124,7 @@ class _ListDeliveryModal extends StatelessWidget {
                   children: [
                     Text(listDelivery[i].nameDelivery!, maxLines: 1, style: GoogleFonts.getFont('Inter')),
                     SizedBox(height: 5.0),
-                    TextFrave(text: listDelivery[i].phone!, color: Colors.grey),
+                    TextCustom(text: listDelivery[i].phone!, color: Colors.grey),
                   ],
                 ),
                 Expanded(
