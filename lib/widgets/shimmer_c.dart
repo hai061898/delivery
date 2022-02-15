@@ -2,7 +2,7 @@
 
 part of 'widgets.dart';
 
-class ShimmerFrave extends StatelessWidget {
+class ShimmerCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Shimmer.fromColors(

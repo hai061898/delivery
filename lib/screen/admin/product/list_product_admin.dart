@@ -71,7 +71,7 @@ class _ListProductsPageState extends State<ListProductsPage> {
         body: FutureBuilder<List<Productsdb>>(
             future: productController.listProductsAdmin(),
             builder: (context, snapshot) => (!snapshot.hasData)
-                ? ShimmerFrave()
+                ? ShimmerCustom()
                 : GridViewListProduct(listProducts: snapshot.data!)),
       ),
     );
