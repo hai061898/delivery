@@ -21,3 +21,4 @@ part 'modal_delete_product.dart';
 part 'modal_active_product.dart';
 part 'model_selection_category.dart';
 part 'modal_select_delivery.dart';
+part 'modal_delete.dart';
