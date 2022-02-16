@@ -1,3 +1,6 @@
+import 'package:da/helper/helper.dart';
+import 'package:da/screen/client/home/home_client_screen.dart';
+import 'package:da/themes/color_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,3 +18,4 @@ part 'formfield_c.dart';
 part 'image_picker_c.dart';
 part 'item_account.dart';
 part 'shimmer_c.dart';
+part 'bottom_navigation_c.dart';
