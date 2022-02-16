@@ -46,7 +46,7 @@ class ClientHomePage extends StatelessWidget {
                         text: DateCustom.getDateFrave() +
                             ', ${authBloc.state.user!.firstName}',
                         fontSize: 17,
-                        color: ColorsFrave.secundaryColor),
+                        color: ColorsCustom.secundaryColor),
                   ],
                 ),
                 InkWell(
