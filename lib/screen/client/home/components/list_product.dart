@@ -2,6 +2,7 @@
 
 import 'package:da/controllers/product_controller.dart';
 import 'package:da/models/response/product_response.dart';
+import 'package:da/screen/client/product/detail_product.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
 import 'package:flutter/material.dart';
