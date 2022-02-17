@@ -73,7 +73,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               SizedBox(height: 30.0),
               TextCustom(text: 'Email Address'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _emailController,
                 hintText: 'example@frave.com',
                 validator: validatedEmail,

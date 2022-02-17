@@ -138,7 +138,7 @@ class _RegisterClientPageState extends State<RegisterClientPage> {
               SizedBox(height: 40.0),
               TextCustom(text: 'Name'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _nameController,
                 hintText: 'Enter your name',
                 validator: RequiredValidator(errorText: 'Name is required'),
@@ -146,7 +146,7 @@ class _RegisterClientPageState extends State<RegisterClientPage> {
               SizedBox(height: 15.0),
               TextCustom(text: 'Lastname'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _lastnameController,
                 hintText: 'Enter your lastname',
                 validator: RequiredValidator(errorText: 'Lastname is required'),
@@ -154,7 +154,7 @@ class _RegisterClientPageState extends State<RegisterClientPage> {
               SizedBox(height: 15.0),
               TextCustom(text: 'Phone'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _phoneController,
                 hintText: '000-000-000',
                 keyboardType: TextInputType.number,
@@ -163,16 +163,16 @@ class _RegisterClientPageState extends State<RegisterClientPage> {
               SizedBox(height: 15.0),
               TextCustom(text: 'Email'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _emailController,
-                hintText: 'email@frave.com',
+                hintText: 'email@star.com',
                 keyboardType: TextInputType.emailAddress,
                 validator: validatedEmail
               ),
               SizedBox(height: 15.0),
               TextCustom(text: 'Password'),
               SizedBox(height: 5.0),
-              FormFieldFrave(
+              FormFieldCustom(
                 controller: _passwordController,
                 hintText: '********',
                 isPassword: true,
