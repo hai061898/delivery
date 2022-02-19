@@ -4,6 +4,7 @@ import 'package:da/bloc/auth/auth_bloc.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/screen/admin/home/admin_home.dart';
 import 'package:da/screen/client/home/home_client_screen.dart';
+import 'package:da/screen/delivery/home/home_delivery.dart';
 import 'package:da/screen/route_page/components/btn_r.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
