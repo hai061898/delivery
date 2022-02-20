@@ -73,7 +73,7 @@ class _ListOrdersForDelivery extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Center(
-                  child: SvgPicture.asset('Assets/no-data.svg', height: 300)),
+                  child: SvgPicture.asset('assets/no-data.svg', height: 300)),
               SizedBox(height: 15.0),
               TextCustom(
                   text: 'Without Orders',
