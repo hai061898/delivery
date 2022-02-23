@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_if_null_operators
+// ignore_for_file: prefer_if_null_operators, prefer_collection_literals
 
 import 'dart:convert';
 

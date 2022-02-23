@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, body_might_complete_normally_nullable
 
 import 'package:da/alert_dialog/alert_dialog.dart';
 import 'package:da/bloc/general/general_bloc.dart';

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:da/bloc/mapdelivery/mapdelivery_bloc.dart';
 import 'package:da/bloc/mylocation/mylocationmap_bloc.dart';

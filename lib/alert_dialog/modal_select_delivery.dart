@@ -11,7 +11,7 @@ void modalSelectDelivery(BuildContext context, String idOrder) {
     barrierColor: Colors.white60,
     builder: (context) => AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-      content: Container(
+      content: SizedBox(
         height: 400,
         width: MediaQuery.of(context).size.width,
         child: Column(

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures
+// ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures, use_key_in_widget_constructors
 
 import 'package:da/alert_dialog/alert_dialog.dart';
 import 'package:da/bloc/user/user_bloc.dart';

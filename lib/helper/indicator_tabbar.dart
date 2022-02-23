@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 part of 'helper.dart';
 
 class IndicatorTabBarCustom extends Decoration {
@@ -24,9 +26,7 @@ class PainterIndicator extends BoxPainter {
 
     canvas.drawRRect(
         RRect.fromRectAndCorners(rect,
-            // ignore: prefer_const_constructors
-            topLeft: Radius.circular(8.0),
-            topRight: Radius.circular(8.0)),
+            topLeft: Radius.circular(8.0), topRight: Radius.circular(8.0)),
         paint);
   }
 }
