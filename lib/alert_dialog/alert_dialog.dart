@@ -19,6 +19,7 @@ part 'modal_error_message.dart';
 part 'modal_loading.dart';
 part 'modal_delete_product.dart';
 part 'modal_active_product.dart';
-part 'model_selection_category.dart';
+part 'modal_selection_category.dart';
 part 'modal_select_delivery.dart';
 part 'modal_delete.dart';
+part 'modal_infor.dart';

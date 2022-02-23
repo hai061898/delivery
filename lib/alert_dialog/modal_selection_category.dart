@@ -9,7 +9,6 @@ void modalSelectionCategory(BuildContext ctx) {
     context: ctx,
     barrierColor: Colors.black26,
     backgroundColor: Colors.white,
-    // ignore: prefer_const_constructors
     shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(40.0), topRight: Radius.circular(40.0))),
