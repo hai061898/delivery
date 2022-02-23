@@ -1,8 +1,10 @@
+import 'package:da/bloc/mylocation/mylocationmap_bloc.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/screen/client/Cart/cart_client.dart';
 import 'package:da/screen/client/home/home_client_screen.dart';
 import 'package:da/screen/client/profile/profile_client.dart';
 import 'package:da/screen/client/search/search_client.dart';
+import 'package:da/screen/map/add_address.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,3 +25,4 @@ part 'item_account.dart';
 part 'shimmer_c.dart';
 part 'bottom_navigation_c.dart';
 part 'stagger_view.dart';
+part 'marketmap.dart';

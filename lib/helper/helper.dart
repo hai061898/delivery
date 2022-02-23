@@ -14,3 +14,4 @@ part 'debouncer.dart';
 part 'date.dart';
 part 'indicator_tabbar.dart';
 part 'marker_c.dart';
+part 'bounceindown.dart';

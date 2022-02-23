@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this, prefer_collection_literals
+
 part of 'map_client_bloc.dart';
 
 @immutable
