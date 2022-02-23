@@ -5,6 +5,7 @@ import 'package:form_field_validator/form_field_validator.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 part 'validate_from.dart';
 part 'secure_storage.dart';
@@ -15,3 +16,4 @@ part 'date.dart';
 part 'indicator_tabbar.dart';
 part 'marker_c.dart';
 part 'bounceindown.dart';
+part 'url_launcher_h.dart';
