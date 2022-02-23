@@ -1,5 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
+import 'package:da/helper/helper.dart';
 import 'package:da/models/response/order_client.dart';
 import 'package:da/services/url_api.dart';
 import 'package:da/themes/color_custom.dart';
@@ -42,7 +43,7 @@ class InfoCardClient extends StatelessWidget {
               TextCustom(text: orderClient.delivery!),
               Spacer(),
               InkWell(
-                onTap: () async => await urlLauncherFrave
+                onTap: () async => await urlLauncherCustom
                     .makePhoneCall('tel:${orderClient.deliveryPhone}'),
                 child: Container(
                   height: 45,

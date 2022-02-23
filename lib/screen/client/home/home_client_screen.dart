@@ -7,6 +7,7 @@ import 'package:da/controllers/category_controller.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/models/response/category_response.dart';
 import 'package:da/screen/client/Cart/cart_client.dart';
+import 'package:da/screen/client/home/components/list_product.dart';
 import 'package:da/screen/client/list_address/list_address.dart';
 import 'package:da/screen/client/search/search_category.dart';
 import 'package:da/services/url_api.dart';
@@ -14,8 +15,6 @@ import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'components/list_product.dart';
 
 class ClientHomePage extends StatelessWidget {
   @override
@@ -177,7 +176,7 @@ class ClientHomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 20.0),
-            ListProducts(),
+            ListProductsH(),
             SizedBox(height: 20.0),
           ],
         ),

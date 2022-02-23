@@ -7,7 +7,7 @@ import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class ListProducts extends StatelessWidget {
+class ListProductsH extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Productsdb>>(

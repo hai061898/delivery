@@ -2,7 +2,7 @@
 
 part of 'helper.dart';
 
-class UrlLauncherFrave {
+class UrlLauncher {
   Future<void> openMapLaunch(String latitude, String longitude) async {
     var url = 'google.navigation:q=$latitude,$longitude&mode=d';
     var urlGoogleMap =
@@ -27,4 +27,4 @@ class UrlLauncherFrave {
   }
 }
 
-final urlLauncherFrave = UrlLauncherFrave();
+final urlLauncherCustom = UrlLauncher();
