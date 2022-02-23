@@ -3,6 +3,9 @@
 import 'package:da/alert_dialog/alert_dialog.dart';
 import 'package:da/bloc/auth/auth_bloc.dart';
 import 'package:da/helper/helper.dart';
+import 'package:da/screen/delivery/order/list_order.dart';
+import 'package:da/screen/delivery/order/order_deliver.dart';
+import 'package:da/screen/delivery/order/order_onway.dart';
 import 'package:da/screen/intro/check_login.dart';
 import 'package:da/screen/profile/change_password_screen.dart';
 import 'package:da/screen/profile/edit_profile_screen.dart';
@@ -106,7 +109,7 @@ class DeliveryHomePage extends StatelessWidget {
                 icon: Icons.check_rounded,
                 colorIcon: 0xff4BB17B,
                 onPressed: () => Navigator.push(
-                    context, routeFrave(page: OrderDeliveredPage())),
+                    context, routeCustom(page: OrderDeliveredPage())),
               ),
               SizedBox(height: 15.0),
               TextCustom(text: 'Personal', color: Colors.grey),

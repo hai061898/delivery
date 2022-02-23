@@ -1,34 +1,36 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_is_empty
+// ignore_for_file: prefer_is_empty, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:da/controllers/delivery_controller.dart';
 import 'package:da/helper/helper.dart';
 import 'package:da/models/response/order_response.dart';
-import 'package:da/screen/delivery/order/components/card_order.dart';
+import 'package:da/screen/delivery/home/home_delivery.dart';
 import 'package:da/themes/color_custom.dart';
 import 'package:da/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'components/card_order.dart';
 import 'detail_order.dart';
 
-class ListOrdersDeliveryPage extends StatelessWidget {
+class OrderDeliveredPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: TextCustom(text: 'List of orders'),
+        title: TextCustom(text: 'Orders Delivered'),
         centerTitle: true,
         elevation: 0,
         leadingWidth: 80,
         leading: InkWell(
-          onTap: () => Navigator.pop(context),
+          onTap: () =>
+              Navigator.push(context, routeCustom(page: DeliveryHomePage())),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.arrow_back_ios_new_rounded,
-                  size: 19, color: ColorsCustom.primaryColor),
+                  size: 17, color: ColorsCustom.primaryColor),
               TextCustom(
                   text: 'Back', fontSize: 17, color: ColorsCustom.primaryColor)
             ],
@@ -36,7 +38,7 @@ class ListOrdersDeliveryPage extends StatelessWidget {
         ),
       ),
       body: FutureBuilder<List<OrdersResponse>?>(
-          future: deliveryController.getOrdersForDelivery('DISPATCHED'),
+          future: deliveryController.getOrdersForDelivery('DELIVERED'),
           builder: (context, snapshot) => (!snapshot.hasData)
               ? Column(
                   children: [
@@ -78,7 +80,7 @@ class _ListOrdersForDelivery extends StatelessWidget {
                   child: SvgPicture.asset('assets/no-data.svg', height: 300)),
               SizedBox(height: 15.0),
               TextCustom(
-                  text: 'Without Orders',
+                  text: 'Without Orders delivered',
                   color: ColorsCustom.primaryColor,
                   fontWeight: FontWeight.w500,
                   fontSize: 21)

@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'components/card_order.dart';
+import 'detail_order.dart';
 
 class OrderOnWayPage extends StatelessWidget {
 
