@@ -1,16 +1,31 @@
-# da
+# star food
 
-A new Flutter project.
+### Requirements
 
-## Getting Started
+#### Change IP
+ - Lib/Services/url.dart
 
-This project is a starting point for a Flutter application.
+#### Google Map API KEY
+-  Page API KEY => Android/app/src/main/AndroidManifest.xml
 
-A few resources to get you started if this is your first Flutter project:
+#### MAPBOX API KEY
+- Page API KEY => lib/Controller/MapBoxController
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### PUSH NOTIFICATIONS - Cloud Messaging | Firebase
+- Page Server Key => lib/Services/PushNotification.dart
+- Page google-services.json => Android/App/
+- Go Firebase
+- Project settings
+- Cloud Messaging
+- Server key
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Flutter
+- Flutter Bloc 
+- Socket io client
+- Google Map
+- MapBox
+- Geolocator
+- Push notifications
+
+#### Nodejs
+- https://github.com/hai061898/food_js
